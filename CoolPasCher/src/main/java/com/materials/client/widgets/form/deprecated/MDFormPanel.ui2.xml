@@ -1,0 +1,78 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:m="urn:import:gwt.material.design.client.ui" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:bb='urn:import:com.materials.client.widgets.buttonbar'>
+
+	<ui:style>
+	.container {
+		font-family: times new roman, times, serif;
+		text-align: left;
+		padding:10px;
+		overflow: auto;
+		margin-top: 0px;
+		border-radius: 5px;
+	}
+	
+	.bbar {
+		margin-bottom: 15px;
+	}
+	
+	.upload {
+		
+	}
+	
+	.headerDiv {
+		margin: 5px 0 50px 0;
+	}
+	
+			.topArea{
+			background: none repeat scroll 0 0 #8b0000 !important;
+			border-bottom: 2px solid #ffb74d !important;
+			color: #ffb74d !important;
+				font-family: times new roman, times, serif;
+			
+		}
+	
+	.topDiv {
+		padding: 7px;
+
+	
+	}
+	
+	.bottomDiv {
+		
+	}
+	
+	.content {
+		
+	}
+	
+	.titel{
+	font-size: 25px;
+}
+	</ui:style>
+
+	<m:MaterialCard ui:field="materialCardUi" styleName="{style.container}">
+		
+		<m:MaterialRow ui:field="toolsRowUi"   height="150px" styleName="{style.topArea}" paddingLeft="10" >
+		
+		<m:MaterialRow  ui:field="materialRow1Ui" styleName="{style.headerDiv}">
+			<m:MaterialColumn grid="l5" ui:field="headerAreaUi1"/>
+			<m:MaterialColumn ui:field="headerAreaUi2" styleName="{style.titel}"/>
+		</m:MaterialRow>
+		
+		<bb:ButtonBarEdit ui:field="buttonbar" addStyleNames="{style.bbar}" />
+
+		
+		</m:MaterialRow>
+		
+			<m:MaterialCardContent ui:field="listContentUi" >
+					<m:MaterialRow  ui:field="topDiv" addStyleNames="{style.topDiv}" />
+					<m:MaterialRow  ui:field="formContent" addStyleNames="{style.content}" />
+					<m:MaterialRow  ui:field="bottomDiv" addStyleNames="{style.bottomDiv}" />
+			
+			</m:MaterialCardContent>
+		
+
+	</m:MaterialCard>
+</ui:UiBinder> 

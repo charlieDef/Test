@@ -1,0 +1,101 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:fu='urn:import:com.materials.client.widgets.upload' xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:mdf='urn:import:com.materials.client.widgets.form'
+	 xmlns:cb='urn:import:gwt.material.design.addins.client'
+	xmlns:ma='urn:import:gwt.material.design.addins.client' xmlns:ie="urn:import:com.materials.client.widgets.upload.image">
+	<ui:style>
+	
+	.imageCard {
+		border-bottom: 4px solid #ffb140;
+	}
+	
+	.imageEdit {
+		margin-top: -20px;
+		width: 20px;
+		float: left;
+	}
+		
+	.cardTitle {
+		color: #ffb140;
+		margin-top: 1px;
+		font-family: times new roman, times, serif;
+		font-size: 18px !important;
+		text-shadow: 1px 1px 1px black;
+		margin-bottom: 5px;
+	}
+	
+	.cardDescription {
+		color: rgba(0, 0, 0, 0.87);
+	}
+	
+	.cardContent {
+		padding-top: 1px !important;
+		font-family: times new roman, times, serif;
+		background: white;
+		padding: 10px !important;
+	}
+	</ui:style>
+	
+	<mdf:MDFormPanel ui:field="mdFormUi">
+		<mdf:childtop>
+		
+		<m:MaterialRow grid="l5">
+	
+		<m:MaterialColumn >
+			<m:MaterialCard ui:field="materialCardUi">
+			<m:MaterialCardImage waves="LIGHT">
+			<m:MaterialImage ui:field="itemImageUi" url="" styleName="{style.imageCard}"/>
+			<m:MaterialCardTitle text="50000 fcfa"  />
+			</m:MaterialCardImage>
+				<m:MaterialCardContent textColor="WHITE" styleName="{style.cardContent}">
+			
+					<m:MaterialLabel ui:field="itemTitelUi" text="Sample Titel" styleName="{style.cardTitle}"/>
+					<m:MaterialLabel ui:field="itemDescriptionUi" styleName="{style.cardDescription}"
+						text="I am a very simple card. I am good at containing small bits of information." />
+						
+								<m:MaterialLabel ui:field="itemDescription2Ui" styleName="{style.cardDescription}" />
+											
+				</m:MaterialCardContent>
+				
+				<m:MaterialCardAction>
+					<ie:SimpleUploader labelText="" ui:field="fileUploadUi" styleName="{style.imageEdit}" />
+				</m:MaterialCardAction>
+				
+				<m:MaterialCardReveal ui:field="cardRevealUi">		
+					<m:MaterialCardTitle iconType ="CLOSE" iconPosition="RIGHT"/>
+					<m:MaterialLabel ui:field="revealTitelUi" text="Sample Titel" styleName="{}"/>
+				</m:MaterialCardReveal>
+				
+			</m:MaterialCard>
+		
+			</m:MaterialColumn>
+							
+		</m:MaterialRow>
+		
+		</mdf:childtop>
+
+
+		<mdf:child bindName="titel">
+			<m:MaterialTextBox ui:field="titelUi" label="Titel" fieldType="OUTLINED"/>
+		</mdf:child>
+
+		<mdf:child bindName="description">
+			<m:MaterialTextBox ui:field="descriptionUi" label="Descrition" text="Votre  Description ici" fieldType="OUTLINED"/>
+		</mdf:child>
+		
+			<mdf:child bindName="description2">
+			<m:MaterialTextBox ui:field="description2Ui" label="Descrition2" text="Votre seconde  Description ici" fieldType="OUTLINED"/>
+		</mdf:child>
+
+
+	
+		<mdf:child bindName="creation">
+			<m:MaterialDatePicker ui:field="creationUi" enabled='false' 
+				placeholder="Creation" detectOrientation="true" language="FR" />
+		</mdf:child>
+
+
+	</mdf:MDFormPanel>
+
+</ui:UiBinder> 

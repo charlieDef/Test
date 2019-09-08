@@ -1,0 +1,60 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:ma='urn:import:gwt.material.design.addins.client'
+	 xmlns:mdf='urn:import:com.materials.client.widgets.box'>
+	<ui:style>
+	.boxPanel {
+	font-family: times new roman, times, serif !important;
+		padding: 0px 25px 0px 25px;
+	}
+	
+	.boxPanel2 {
+		margin-bottom: 35px !important;
+		font-family: times new roman, times, serif !important;
+	}
+	
+	.buttonSearch {
+		background-color: #960018;
+	}
+	
+	.titelLabel{
+	text-align: center;
+	font-weight: bolder;
+	margin-bottom: 35px;
+	color: #aaa;
+
+
+	
+}
+
+.myIcon{
+	text-align: left;
+}
+	
+	</ui:style>	
+	
+	
+	<m:MaterialPanel ui:field="morphWidgetUi">
+
+	<g:HTMLPanel ui:field="htmlPanelUi"  styleName="{style.boxPanel}">
+			
+			<ma:combobox.MaterialComboBox ui:field="rubriqueUi" label="Rubrique" styleName="{style.boxPanel2}"/>
+			
+			<ma:combobox.MaterialComboBox ui:field="type2BienUi" label="Type de bien" styleName="{style.boxPanel2}"/>
+			
+			<ma:combobox.MaterialComboBox ui:field="provinceUi" label="Region" styleName="{style.boxPanel2}"/>
+			
+			<ma:combobox.MaterialComboBox ui:field="villeUi" label="Ville" styleName="{style.boxPanel2}"/>
+			
+			<m:MaterialTextBox ui:field="autresVilleUi" label="Ville / localité" styleName="{style.boxPanel2}" visible="false"/>				
+			
+
+	</g:HTMLPanel>
+<!-- 	
+	<m:MaterialPanel ui:field="morphWidgetUi" marginBottom="20" styleName="{style.myIcon}" /> -->
+
+
+	
+	</m:MaterialPanel>
+
+</ui:UiBinder> 

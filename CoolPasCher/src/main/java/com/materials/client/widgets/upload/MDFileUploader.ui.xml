@@ -1,0 +1,35 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:m="urn:import:gwt.material.design.client.ui" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:ma="urn:import:gwt.material.design.addins.client.fileuploader">
+	<ui:style>
+	.content{
+
+}
+
+.fileuploader {
+    position: relative;
+    background: white;
+    width: 100%;
+    height: 115px !important;
+}
+
+	</ui:style>
+
+
+	<m:MaterialCard shadow="0">
+		<m:MaterialRow  styleName="{style.content}">
+			<ma:MaterialFileUploader ui:field="cardUploaderUi" styleName="{style.fileuploader}" 
+				grid="l12" preview="false" shadow="0">
+				<ma:MaterialUploadLabel title="Deplacer votre fichier ici" />
+			</ma:MaterialFileUploader>
+		</m:MaterialRow>
+		<m:MaterialRow ui:field="materialRowUi">
+			<m:MaterialLabel ui:field="lblNameUi" fontSize="1.5em" />
+			<m:MaterialLabel ui:field="lblSizeUi" fontSize="0.8em" />
+			<m:MaterialProgress ui:field="progressUi"
+				layoutPosition="ABSOLUTE" bottom="0" left="0" type="DETERMINATE"
+				percent="0" />
+		</m:MaterialRow>
+	</m:MaterialCard>
+</ui:UiBinder> 

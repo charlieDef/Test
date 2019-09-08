@@ -1,0 +1,59 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:mb="urn:import:com.materials.client.widgets.button"
+	xmlns:ma="urn:import:gwt.material.design.addins.client" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+	.card {
+		font-family: times new roman, times, serif;
+		max-width: 300px !important;
+		max-height: 700px !important;
+			 border-top-left-radius: 5px;
+			 border-top-right-radius: 5px;
+	}
+	
+	.image {
+		border: 2px solid white;
+		margin-top: -50px;
+	}
+	
+	.topArea{
+		background: none repeat scroll 0 0 #8b0000 !important;
+		border-bottom: 2px solid #ffb74d !important;
+		color: #ffb74d !important;
+	
+}
+	</ui:style>
+	<m:MaterialDialog styleName="{style.card}" ui:field="materialModalUi"
+		inDuration="300" outDuration="300" dismissible="true" fontSize="1em">
+
+		<m:MaterialCard textAlign="LEFT" margin="0" ui:field="materialCardUi">
+			<m:MaterialCardContent textAlign="CENTER"
+				padding="5">
+				<m:MaterialRow height="120px" margin="0" styleName="{style.topArea}">
+					<m:MaterialCardTitle ui:field="cardTitelUi"
+						fontSize="1.8em" text="Login" />
+				</m:MaterialRow>
+				<m:MaterialRow height="60px">
+					<m:MaterialImage ui:field="userImageUi" url="img/a_user.jpg"
+						shadow="1" circle="true" width="100px" height="100px" styleName="{style.image}" />
+				</m:MaterialRow>
+
+				<m:MaterialRow padding="30" marginTop="-40" textAlign="LEFT ">
+					<m:MaterialTextBox ui:field="emailUI" label="Email" fieldType="OUTLINED"/>
+					<m:MaterialTextBox ui:field="pwdLabelUI" label="Mot de pass" fieldType="OUTLINED"/>
+					<m:MaterialLink ui:field="linkButtonUi" text="Mot de pass oublier ?"
+	textColor="AMBER_DARKEN_1" marginTop="15" />
+					<m:MaterialLabel ui:field="loginFailUi" text="Echec!!" visible="false" textColor="RED" />
+				</m:MaterialRow>
+			</m:MaterialCardContent>
+
+			<m:MaterialCardAction height="100px">
+				<mb:MboaButton ui:field="connecButtontUi" text="Connection"
+					margin="5" />
+							<mb:MboaButton ui:field="resetButtontUi" text="Nouveau PWD"
+					margin="5" visible="false" />
+			</m:MaterialCardAction>
+
+		</m:MaterialCard>
+	</m:MaterialDialog>
+</ui:UiBinder> 

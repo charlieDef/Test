@@ -1,0 +1,175 @@
+none repeat scroll 0 0 #251E13 !important
+
+			<m:MaterialHeader ui:field="header">
+				<m:MaterialNavBarShrink ui:field="navBar"
+					activates="sidenavNavShrink" backgroundColor="PURPLE" shadow="1">
+					<m:MaterialNavBrand fontSize="2.2em"
+						paddingLeft="60" text="My Files" />
+
+
+
+					<m:MaterialNavSection float="RIGHT">
+						<m:MaterialLink iconType="APPS" text="Design" />
+						<m:MaterialLink iconType="REFRESH" text="Hello" />
+						<m:MaterialLink text="Design" />
+						<m:MaterialLink text="Hello" />
+					</m:MaterialNavSection>
+
+					<m:MaterialFAB ui:field="fab" layoutPosition="ABSOLUTE"
+						right="60" bottom="-32">
+						<m:MaterialLink text="Hello fff" />
+						<m:MaterialButton type="FLOATING"
+							href="https://github.com/GwtMaterialDesign/gwt-material-patterns/blob/release_2.0/src/main/java/com/github/gwtmaterialdesign/client/application/sidenavcard/CardSideNavView.ui.xml"
+							target="_blank" backgroundColor="PINK" size="LARGE" iconType="CODE" />
+					</m:MaterialFAB>
+
+				</m:MaterialNavBarShrink>
+
+			</m:MaterialHeader>
+			
+			
+			background: none repeat scroll 0 0 #8B0000 !important;
+			
+			
+			
+			background: none repeat scroll 0 0 #8B0000 !important;
+opacity: 0.6 !important;
+border-bottom: 1px solid #DEB887;
+			
+			
+				private List<ContentSO> getTempContentSos() {
+
+		List<ContentSO> list = new ArrayList<ContentSO>();
+
+		ContentSO contentSO = new ContentSO("Article", "Tournoi de Foot",
+				"Premiere participation de l 'equipe de football prebaloise au tournoi...", "img/ptwo.JPG");
+		contentSO.setId(1);
+
+		ContentSO contentSO1 = new ContentSO("Article", "Excursion Waldorf",
+				"Visite du Château de Fontainebleau au départ de Paris à 90km de..", "img/pone.JPG");
+		contentSO1.setId(2);
+
+		ContentSO contentSO2 = new ContentSO("Article", "Meilleur Butteur ",
+				"Premiere participation de l 'equipe de football prebaloise au tournoi...", "img/pthree.JPG");
+		contentSO2.setId(3);
+
+		ContentSO contentSO3 = new ContentSO("Article", "Tournoi de Foot",
+				"Premiere participation de l 'equipe de football prebaloise au tournoi...", "img/ptwo.JPG");
+		contentSO3.setId(4);
+
+		ContentSO contentSO4 = new ContentSO("Article", "Excursion Waldorf",
+				"Visite du Château de Fontainebleau au départ de Paris à 90km de..", "img/pone.JPG");
+		contentSO4.setId(5);
+
+		ContentSO contentSO5 = new ContentSO("Article", "Meilleur Butteur ",
+				"Premiere participation de l 'equipe de football prebaloise au tournoi...", "img/pthree.JPG");
+		contentSO5.setId(6);
+
+		ContentSO contentS06 = new ContentSO("Article", "Tournoi de Foot",
+				"Premiere participation de l 'equipe de football prebaloise au tournoi...", "img/ptwo.JPG");
+		contentS06.setId(7);
+
+		ContentSO contentSO7 = new ContentSO("Article", "Excursion Waldorf",
+				"Visite du Château de Fontainebleau au départ de Paris à 90km de..", "img/pone.JPG");
+		contentSO7.setId(8);
+
+		ContentSO contentSO8 = new ContentSO("Article", "Meilleur Butteur ",
+				"Premiere participation de l 'equipe de football prebaloise au tournoi...", "img/pthree.JPG");
+		contentSO8.setId(9);
+
+		ContentSO contentSO9 = new ContentSO("Article", "Tournoi de Foot",
+				"Premiere participation de l 'equipe de football prebaloise au tournoi...", "img/ptwo.JPG");
+		contentSO9.setId(10);
+
+		ContentSO contentSO10 = new ContentSO("Article", "Excursion Waldorf",
+				"Visite du Château de Fontainebleau au départ de Paris à 90km de..", "img/pone.JPG");
+		contentSO10.setId(11);
+
+		ContentSO contentSO11 = new ContentSO("Article", "Meilleur Butteur ",
+				"Premiere participation de l 'equipe de football prebaloise au tournoi...", "img/pthree.JPG");
+		contentSO11.setId(12);
+
+		ContentSO contentS012 = new ContentSO("Article", "Tournoi de Foot",
+				"Premiere participation de l 'equipe de football prebaloise au tournoi...", "img/ptwo.JPG");
+		contentS012.setId(13);
+
+		ContentSO contentSO13 = new ContentSO("Article", "Excursion Waldorf",
+				"Visite du Château de Fontainebleau au départ de Paris à 90km de..", "img/pone.JPG");
+		contentSO13.setId(14);
+
+		ContentSO contentSO14 = new ContentSO("Article", "Meilleur Butteur ",
+				"Premiere participation de l 'equipe de football prebaloise au tournoi...", "img/pthree.JPG");
+		contentSO14.setId(15);
+
+		list.add(contentSO);
+		list.add(contentSO1);
+		list.add(contentSO2);
+		list.add(contentSO3);
+		list.add(contentSO4);
+		list.add(contentSO5);
+		list.add(contentS06);
+		list.add(contentSO7);
+		list.add(contentSO8);
+		list.add(contentSO9);
+		list.add(contentSO10);
+		list.add(contentSO11);
+		list.add(contentS012);
+		list.add(contentSO13);
+		list.add(contentSO14);
+
+		return list;
+	}
+			
+			
+			
+			
+			
+			
+			.irc_land .irc_sep {
+    background: none repeat scroll 0 0 #121212;
+    box-shadow: 1px 0 #2A2A2A;
+    display: inline-block;
+    margin: 20px 0;
+    vertical-align: middle;
+    width: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+
+	
+	.icon {
+		position: absolute;
+		top:0;
+		right: 0;
+	}
+
+	.therow {
+		position: relative;
+	}
+	</ui:style>
+	<m:MaterialRow ui:field="materialRowUi"
+		styleName="{style.therow}">
+
+		<g:HTML ui:field="htmlUi" text="Votre Titre ici" />
+
+		<m:MaterialIcon ui:field="editButtonUi" title="editer"
+			styleName="{style.icon}" iconType="CREATE" visible="false" width="50px" />
+	</m:MaterialRow>
+
+
+</ui:UiBinder> 

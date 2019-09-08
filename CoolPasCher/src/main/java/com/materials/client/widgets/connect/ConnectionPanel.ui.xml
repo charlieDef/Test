@@ -1,0 +1,21 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+	
+	</ui:style>
+
+	<m:MaterialFAB depth="995" type="CLICK_ONLY" >
+		<m:MaterialButton type="FLOATING" iconType="PERSON"
+			size="LARGE" />
+		<m:MaterialFABList>
+			<m:MaterialAnchorButton ui:field="rsociauxUi" type="FLOATING" waves="LIGHT"
+				backgroundColor="PURPLE_ACCENT_2" iconType="STAR_HALF" tooltip="Reseaux sociaux" href="javascript:doToast('rsociaux')"/>
+			<m:MaterialAnchorButton ui:field="menuUi" type="FLOATING" waves="LIGHT"
+				backgroundColor="YELLOW" iconType="LIST" tooltip="Menus" href="javascript:doToast('menus')"/>
+				<m:MaterialButton  type="FLOATING"  ui:field="searchButtonUi" waves="LIGHT" text="Chercher" style="background-color: #960018; color:#ffb74d;" marginBottom="20"  />
+
+		</m:MaterialFABList>
+	</m:MaterialFAB>
+
+</ui:UiBinder> 

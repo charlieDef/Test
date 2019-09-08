@@ -1,0 +1,144 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:fu='urn:import:com.materials.client.widgets.upload' xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:mdf='urn:import:com.materials.client.widgets.form'
+	xmlns:ma='urn:import:gwt.material.design.addins.client' xmlns:ie="urn:import:com.materials.client.widgets.upload.image">
+	
+		<ui:style>
+	
+	.card{
+	
+	border: 1px solid #696969;
+	padding: 10px;
+}
+	
+	.imageCard {
+		border-bottom: 4px solid #ffb140;
+	}
+	
+			.imageEdit {
+	margin-top: -20px;
+		width: 20px;
+		float: left;
+	}
+	
+	
+	.cardTitle {
+		color: #ffb140;
+		margin-top: 1px;
+		font-family: times new roman, times, serif;
+		font-size: 20px !important;
+			text-shadow: 1px 1px 1px black;
+	}
+	
+	.cardDescription{
+	color: rgba(0, 0, 0, 0.87);
+}
+	
+	.cardContent {
+		padding-top: 1px !important;
+		font-family: times new roman, times, serif;
+		background: white;
+	}
+	
+	</ui:style>
+	
+	
+	<m:MaterialPanel ui:field="materialPanelUi">
+	<mdf:MDFormPanel ui:field="mdFormUi">
+
+		<mdf:childheader1>
+		</mdf:childheader1>
+
+		<mdf:childheader2>
+			<m:MaterialLabel ui:field="textHeaderLabelUi" text="Details du Site" />
+		</mdf:childheader2>
+		
+	<mdf:childtop>
+		
+		<m:MaterialRow grid="l5">
+	
+		<m:MaterialColumn >
+			<m:MaterialCard>
+			<m:MaterialCardImage waves="LIGHT">
+			<m:MaterialImage ui:field="itemImageUi" url="" styleName="{style.imageCard}"/>
+			</m:MaterialCardImage>
+				<m:MaterialCardAction>
+				<ie:SimpleUploader labelText="" ui:field="fileUploadUi" styleName="{style.imageEdit}" />
+				</m:MaterialCardAction>
+			
+			</m:MaterialCard>
+				
+			</m:MaterialColumn>
+		</m:MaterialRow>
+		
+		</mdf:childtop>
+
+<!-- 		<mdf:child bindName="upload">
+			<fu:MDFileUploader title="420x225" visible="false"
+				ui:field="fileUploadUi" />
+		</mdf:child> -->
+
+		<mdf:child bindName="name">
+			<m:MaterialTextBox ui:field="nameUi" label="Nom" enabled="false"/>
+		</mdf:child>
+
+		<mdf:child bindName="shortName">
+			<m:MaterialTextBox ui:field="shortNameUi" label="Nom (short)" enabled="false"/>
+		</mdf:child>
+		
+			<mdf:child bindName="longName">
+			<m:MaterialTextBox ui:field="longNameUi" label="Nom (long)" enabled="false"/>
+		</mdf:child>
+		
+			<mdf:child bindName="description">
+			<m:MaterialTextBox ui:field="descriptionUi" label="Description" enabled="false"/>
+		</mdf:child>
+		
+			<mdf:child bindName="email">
+			<m:MaterialTextBox ui:field="emailUi" label="Email" enabled="false"/>
+		</mdf:child>
+		
+			<mdf:child bindName="pwd1">
+			<m:MaterialTextBox ui:field="pwd1Ui" label="PWD1" enabled="false"/>
+		</mdf:child>
+		
+			<mdf:child bindName="pwd2">
+			<m:MaterialTextBox ui:field="pwd2Ui" label="PWD2" enabled="false" />
+		</mdf:child>
+		
+			<mdf:child bindName="tel">
+			<m:MaterialTextBox ui:field="telUi" label="Tel" enabled="false"/>
+		</mdf:child>
+		
+		<mdf:child bindName="adresse">
+			<m:MaterialTextArea ui:field="adresseUi" label="Adresse" enabled="false"/>
+		</mdf:child>
+		
+		<mdf:child bindName="copyRight">
+			<m:MaterialTextBox ui:field="copyRightUi" label="CopyRightText" enabled="false"/>
+		</mdf:child>
+		
+		<mdf:child bindName="emailAdmin">
+			<m:MaterialTextBox ui:field="emailAdminUi" label="EmailAdmin" enabled="false"/>
+		</mdf:child>
+		
+		<mdf:child bindName="emailPresident">
+			<m:MaterialTextBox ui:field="emailPresidentUi" label="Email President" enabled="false"/>
+		</mdf:child>
+		
+		<mdf:child bindName="mailSendSuccessText">
+			<m:MaterialTextArea ui:field="mailSendSuccessTextUi" label="MailSendSuccessText" enabled="false"/>
+		</mdf:child>
+
+
+		<mdf:child bindName="uploadCgu">
+<!-- 			<fu:MDFileUploader title="420x225" visible="false"
+				ui:field="uploadCguUi" /> -->
+				
+				<ie:SimpleUploader labelText="" ui:field="uploadCguUi" styleName="{style.imageEdit}" />
+		</mdf:child>
+
+	</mdf:MDFormPanel>
+</m:MaterialPanel>
+</ui:UiBinder> 

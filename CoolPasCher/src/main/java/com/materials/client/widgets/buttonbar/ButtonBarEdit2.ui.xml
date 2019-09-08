@@ -1,0 +1,31 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" 	xmlns:mb="urn:import:com.materials.client.widgets.button"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+	.button{
+	color: #ffa726;
+}
+
+
+.myButton{
+	background-color: #760017 !important;
+	color: #ffb74d !important;
+	font-size: 12px !important;
+	border: 1px solid #ffb74d !important;
+	margin-top: 15px !important;
+}
+
+.area{
+
+}
+	</ui:style>
+	<g:HTMLPanel tag="div" ui:field="divBase" styleName="{style.area}">
+		
+		<mb:MboaButton ui:field="editButton" text="editer" styleName="{style.myButton}" />
+		
+		<mb:MboaButton ui:field="saveButton" text="sauver" styleName="{style.myButton}" marginRight="20"/>
+		
+		<mb:MboaButton ui:field="cancelButton" text="annuler" styleName="{style.myButton}" />		
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

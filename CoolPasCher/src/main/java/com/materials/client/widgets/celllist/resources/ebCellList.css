@@ -1,0 +1,53 @@
+/**CellList**/
+.cellListWidget {
+	
+}
+
+.cellListEvenItem {
+	height: 70px;
+	background-image: url("img/headerBG2.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+	margin-bottom: 10px;
+	border: 1px #90a4ae solid;
+	border-radius: 2px;
+	box-shadow: 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0
+		rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+		color: black;
+}
+
+.cellListOddItem {
+/* 	background-image: url("img/headerBG2.jpg"); */
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+	height: 70px;
+	margin-bottom: 15px;
+	border: 1px #90a4ae solid;
+	border-radius: 2px;
+	box-shadow: 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0
+		rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+		color: black;
+}
+
+.cellListOddItem:HOVER, .cellListEvenItem:HOVER {
+	border: 1px #4e78a0 solid;
+	cursor: default;
+}
+
+.cellListKeyboardSelectedItem {
+/* 	background: #ffc; */
+}
+
+.cellListSelectedItem {
+	/* background-color: #B7C3D0; */
+/* 	background: rgba(0, 0, 0, 0)
+		linear-gradient(to bottom, #4E78A0, #b7c3d0, #4e78a0, #4e78a0) repeat
+		scroll 0 0 !important; */
+		border: 1px white solid;
+		background: #90a4ae;
+	overflow: hidden;
+	color: white;
+	height: 70px;
+}

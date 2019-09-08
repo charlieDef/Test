@@ -1,0 +1,7 @@
+/target/
+/src/main/webapp/ckeditor
+/war/mboaonline/
+/war/WEB-INF/deploy/
+.classpath
+.project
+.settings

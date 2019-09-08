@@ -1,0 +1,91 @@
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:mb="urn:import:com.materials.client.widgets.button"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:m="urn:import:gwt.material.design.client.ui"  xmlns:incubator="urn:import:gwt.material.design.incubator.client.search"
+	xmlns:ma="urn:import:gwt.material.design.addins.client" xmlns:mh="urn:import:com.materials.client.views">
+	<ui:with field='res' type='com.materials.client.resources.AppResource' />
+	<!-- margin-left: 250px; margin-right: 250px; -->
+	<ui:style>
+	.imageCard {
+		border-right: 2px solid #ce7700;
+	}
+	
+	.cardTitle {
+		color: #ce7700;
+		margin-top: 1px;
+		font-family: times new roman, times, serif;
+		font-size: 17px !important;
+		text-shadow: 1px 1px 1px black;
+	}
+	
+	.cardContent {
+		padding-top: 1px !important;
+		font-family: times new roman, times, serif;
+		background: white;
+	}
+	
+	.mainContainer {
+		padding-top: 100px; 
+	
+	}
+	
+	.siteContainer {
+
+	}
+	
+	.deffo{
+	
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	background-color: rgb(150, 0, 24);
+	z-index: 20;
+	border-top: 1px solid #ffb74d;
+}
+	.container{
+		
+	}
+	
+	.mySearch{
+	font-family: times new roman, times, serif;
+}
+	
+	.myButton{
+	background-color: #760017 !important;
+	color: #ffb74d !important;
+	font-size: 12px;
+	border: 1px solid #ffb74d !important;
+	font-family: times new roman, times, serif;
+	margin-top: 17px !important;
+}
+	
+
+	</ui:style>
+
+	<g:HTMLPanel ui:field="htmlPanel">
+
+		<m:MaterialPanel ui:field="materialPanelUi" opacity="1" >
+			<mh:header.APPHeaderPanel ui:field="headerPanelUi" />
+			<mh:navbar.APPNavBarPanel ui:field="navBarPanelUi"  />
+
+			<m:MaterialContainer ui:field="mainContainer" class="{style.mainContainer}">
+						
+					<m:MaterialRow textAlign="LEFT" paddingBottom="10" styleName="{style.siteContainer}" >
+						<m:MaterialColumn grid='s12 l12'>
+							<g:SimplePanel ui:field="contentUi" styleName="{style.container}" />
+						</m:MaterialColumn>
+		
+					</m:MaterialRow>
+					
+		<!-- 				<m:MaterialColumn ui:field="panelBottom" styleName="{style.deffo}"/> -->
+	
+				</m:MaterialContainer>
+
+		</m:MaterialPanel>
+		
+	<!-- 	<m:MaterialRow>
+			<m:MaterialColumn ui:field="columnLeftUi" />
+			<m:MaterialColumn ui:field="columnRightUi"/>
+		</m:MaterialRow> -->
+	
+	</g:HTMLPanel>
+</ui:UiBinder> 

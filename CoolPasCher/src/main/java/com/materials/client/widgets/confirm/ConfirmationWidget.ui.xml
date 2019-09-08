@@ -1,0 +1,29 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:ma="urn:import:gwt.material.design.addins.client" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+	.card {
+			font-family: times new roman, times, serif;	
+	
+	}
+	</ui:style>
+	<m:MaterialDialog styleName="{style.card}" ui:field="materialModalUi"
+		inDuration="300" outDuration="300" dismissible="false" fontSize="1em">
+
+		<m:MaterialCard    textAlign="CENTER" margin="0">
+			<m:MaterialCardContent ui:field="cardContenUi">
+				<m:MaterialCardTitle ui:field="cardTitelUi" fontSize="1.8em" 
+					text="Confirmer l'action" />
+
+				<m:MaterialLabel ui:field="contentTextLabelUI" fontSize="1.2em"/>
+			</m:MaterialCardContent>
+
+			<m:MaterialCardAction height="100px">
+				<m:MaterialButton ui:field="okButtonUi" text="OK" margin="5" />
+				<m:MaterialButton  text="NON" ui:field="noButtonUi" margin="5" />
+			</m:MaterialCardAction>
+
+		</m:MaterialCard>
+	</m:MaterialDialog>
+</ui:UiBinder> 

@@ -1,0 +1,37 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'>
+    <ui:style type="com.materials.client.widgets.swipe.SwipeableContainer.Style">
+        .container {
+            position: relative;
+            overflow: hidden;
+      
+        }
+
+        .contentContainer, .content {
+            position: absolute !important;
+            margin-right: 5px;
+        }
+
+        .container.swipeHorizontal .contentContainer, .container.swipeHorizontal .content {
+            top: 0;
+            bottom: 0;
+        }
+
+        .container.swipeVertical .contentContainer, .container.swipeVertical .content {
+            left: 0;
+            right: 0;
+        }
+
+        .container.swipeHorizontal .contentContainer {
+            left: 0;
+            transition: left .3s ease-in-out;
+        }
+
+        .container.swipeVertical .contentContainer {
+            top: 0;
+            transition: top .3s ease-in-out;
+        }
+    </ui:style>
+    <div class="{style.container}">
+        <div class="{style.contentContainer}" ui:field="contentContainerUi"></div>
+    </div>
+</ui:UiBinder>

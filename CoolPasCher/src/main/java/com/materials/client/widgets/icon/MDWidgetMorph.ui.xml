@@ -1,0 +1,27 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style type="com.materials.client.widgets.icon.MDWidgetMorph.Style">
+	
+	.base{
+	position: relative;
+
+}
+
+.theWidget{
+		position: absolute;
+		top: 0;
+}
+	
+	</ui:style>
+	<m:MaterialPanel ui:field="panelBaseUi" styleName="{style.base}">
+	
+<!-- 
+	
+	<m:MaterialIcon ui:field="sourceUi" iconSize="MEDIUM" styleName="{style.theIcon}" iconType="SEARCH" depth="2" opacity="1"/>
+	
+	<m:MaterialIcon ui:field="targetUi" iconSize="MEDIUM" styleName="{style.theIcon}" iconType="MENU" depth="1" opacity="0"/> -->
+	
+	</m:MaterialPanel>
+
+</ui:UiBinder> 

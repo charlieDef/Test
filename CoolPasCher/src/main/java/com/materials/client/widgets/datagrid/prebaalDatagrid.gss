@@ -1,0 +1,176 @@
+.dataGridWidget {
+  			font-family: times new roman, times, serif !important;
+
+}
+
+.dataGridFirstColumn {
+  
+}
+
+.dataGridLastColumn {
+  	border-right: none !important;
+}
+
+.dataGridFooter {
+		height: 15px;
+		background-color: #ddd;
+		border-bottom: 1px solid #AA9988;
+		border-right: 1px solid #AA9988;
+		border-top: none;
+}
+
+.dataGridHeader {
+	font-family: times new roman, times, serif !important;
+    color: #4b4a4a;
+    background-color: #f0f3f3;
+    border-bottom: 1px solid #ccc;
+    padding: .25em;
+    text-shadow: none;
+}
+
+.dataGridCell {
+	font-family: times new roman, times, serif !important;
+	color: #525252;
+	border-radius:0px;	
+	border: 0 solid;
+	height: 40px;
+}
+
+.dataGridFirstColumnFooter {
+  
+}
+
+.dataGridFirstColumnHeader {
+  
+}
+
+.dataGridLastColumnFooter {
+  	border-right: none !important;
+}
+
+.dataGridLastColumnHeader {
+
+	
+}
+
+.dataGridSortableHeader {
+}
+
+.dataGridSortableHeader:hover {
+}
+
+.dataGridSortedHeaderAscending {
+  
+}
+
+.dataGridSortedHeaderDescending {
+  
+}
+
+.dataGridEvenRow {
+}
+
+.dataGridEvenRowCell {
+}
+
+.dataGridOddRow {
+}
+
+.dataGridOddRowCell {
+}
+
+.dataGridHoveredRow {
+}
+
+.dataGridHoveredRowCell {
+}
+
+.dataGridKeyboardSelectedRow {
+
+}
+
+.dataGridKeyboardSelectedRowCell {
+
+}
+
+.dataGridSelectedRow {
+}
+
+.dataGridSelectedRowCell {
+	color: white;
+	border-color: #90a4ae ;
+	background-color: #90a4ae ;
+
+}
+
+/**
+ * The keyboard selected cell is visible over selection.
+ */
+.dataGridKeyboardSelectedCell {
+	border-top: none;
+	border-left: none;
+}
+
+td.dataGridTextBoxCell input {
+    width: 100%;
+}
+
+td.dataGridTobBottomCell > div {
+    margin-left: 0.5em;
+}
+
+td.dataGridTopCell {
+padding-left: 5px;
+}
+
+
+td.dataGridTopCell > div {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffb140;
+    font-family: 'times new roman',times,serif;
+    text-shadow: 1px 1px 1px black;
+}
+
+td.dataGridSubCell > div {
+	 font-size: 15px;
+margin-left: 10px;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+td.dataGridSubCell2 > div {
+	 font-size: 14px;
+	margin-left: 30px;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+td.dataGridSubCell3> div {
+	 font-size: 13px;
+	margin-left: 60px;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+
+td.dataGridIconCell > div{
+	vertical-align: middle;
+
+}
+
+td.dataGridIconCell{
+width: 50px;
+overflow: hidden;
+
+}
+
+td.dataGridIconCell > div > img:HOVER{
+	cursor: pointer;
+}
+
+td.dataGridTextBoxCell > div{
+	
+}
+
+td.dataGridCheckboxCell > div{
+	
+}
+

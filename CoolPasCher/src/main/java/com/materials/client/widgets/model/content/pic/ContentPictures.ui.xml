@@ -1,0 +1,70 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" 	xmlns:ie="urn:import:com.materials.client.widgets.upload.image"
+	xmlns:fu='urn:import:com.materials.client.widgets.upload' xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:mdf='urn:import:com.materials.client.widgets.form'
+	xmlns:ma='urn:import:gwt.material.design.addins.client' 	xmlns:rs='urn:import:com.materials.client.widgets.slider'>
+	<ui:style>
+	.imageCard {
+		border-bottom: 4px solid #ffb140;
+	}
+	
+		.slider {
+		border: 1px solid black;
+	}
+		
+		.imageEdit {
+	margin-top: -35px;
+		width: 20px;
+		float: left;
+	}
+	
+	
+	.cardTitle {
+		color: #ffb140;
+		margin-top: 1px;
+		font-family: times new roman, times, serif;
+		font-size: 20px !important;
+		text-shadow: 1px 1px 1px black;
+	}
+	
+	.cardDescription {
+		color: rgba(0, 0, 0, 0.87);
+	}
+	
+
+	
+	.cardContent {
+		padding-top: 1px !important;
+		font-family: times new roman, times, serif;
+		background: white;
+	}
+	</ui:style>
+	<mdf:MDFormPanel ui:field="mdFormUi">
+
+		<mdf:childheader1>
+		<m:MaterialIcon ui:field="backButtonUi" waves="LIGHT" marginLeft="-20"
+				iconType="KEYBOARD_BACKSPACE" iconPosition="LEFT" iconFontSize="40"/>
+		</mdf:childheader1>
+
+		<mdf:childheader2>
+			<m:MaterialLabel ui:field="textHeaderLabelUi" text="Details" />
+		</mdf:childheader2>
+		<mdf:childtop>
+		
+		<m:MaterialRow>
+
+<m:MaterialColumn marginTop="0">
+	<ie:SimpleUploader labelText="" ui:field="fileUploadUi" styleName="{style.imageEdit}" />
+</m:MaterialColumn>
+
+
+			<g:FlowPanel ui:field="sliderUi" />
+		</m:MaterialRow>
+		
+	
+		</mdf:childtop>
+
+
+	</mdf:MDFormPanel>
+
+</ui:UiBinder> 

@@ -1,0 +1,150 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:fu='urn:import:com.materials.client.widgets.upload' xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:mdf='urn:import:com.materials.client.widgets.form'
+	xmlns:ma='urn:import:gwt.material.design.addins.client' xmlns:ie="urn:import:com.materials.client.widgets.upload.image">
+	
+		<ui:style>
+	
+	.card{
+	
+	border: 1px solid #696969;
+	padding: 10px;
+}
+	
+	.imageCard {
+		border-bottom: 4px solid #ffb140;
+	}
+	
+			.imageEdit {
+	margin-top: -20px;
+		width: 20px;
+		float: left;
+	}
+	
+	
+	.cardTitle {
+		color: #ffb140;
+		margin-top: 1px;
+		font-family: times new roman, times, serif;
+		font-size: 20px !important;
+			text-shadow: 1px 1px 1px black;
+	}
+	
+	.cardDescription{
+	color: rgba(0, 0, 0, 0.87);
+}
+	
+	.cardContent {
+		padding-top: 1px !important;
+		font-family: times new roman, times, serif;
+		background: white;
+	}
+	
+	</ui:style>
+	
+	
+	<m:MaterialPanel ui:field="materialPanelUi">
+	<mdf:MDFormPanel ui:field="mdFormUi">
+	
+		<mdf:childheader1>
+			<m:MaterialIcon ui:field="backButtonUi" waves="LIGHT" marginLeft="-20"
+				iconType="KEYBOARD_BACKSPACE" iconPosition="LEFT" iconFontSize="40" />
+		</mdf:childheader1>
+		
+
+		<mdf:childheader2>
+			<m:MaterialLabel ui:field="textHeaderLabelUi" text="Details du Site" />
+		</mdf:childheader2>
+		
+	<mdf:childtop>
+		
+		<m:MaterialRow grid="l5">
+	
+		<m:MaterialColumn >
+			<m:MaterialCard ui:field="materialCardUi">
+			<m:MaterialCardImage waves="LIGHT">
+			<m:MaterialImage ui:field="itemImageUi" url="" styleName="{style.imageCard}"/>
+			</m:MaterialCardImage>
+				<m:MaterialCardAction>
+				<ie:SimpleUploader labelText="" ui:field="fileUploadUi" styleName="{style.imageEdit}" />
+				</m:MaterialCardAction>
+			
+			</m:MaterialCard>
+				
+			</m:MaterialColumn>
+		</m:MaterialRow>
+		
+		</mdf:childtop>
+		
+					<mdf:child bindName="creator">
+			<m:MaterialTextBox ui:field="creatorUi" label="Createur" enabled="false" fieldType="OUTLINED"/>
+		</mdf:child>
+		
+
+		<mdf:child bindName="creation">
+			<m:MaterialDatePicker ui:field="creationUi" enabled='false' 
+				placeholder="Creation" detectOrientation="true" language="FR"  fieldType="OUTLINED"/>
+		</mdf:child>
+		
+			<mdf:child bindName="titel">
+			<m:MaterialTextBox ui:field="titelUi" label="Titre" enabled="false" fieldType="OUTLINED"/>
+		</mdf:child>
+		
+		<mdf:child bindName="label">
+			<m:MaterialTextBox ui:field="labelUi" label="Label" enabled="false" fieldType="OUTLINED"/>
+		</mdf:child>
+
+		<mdf:child bindName="category">
+			<m:MaterialTextBox ui:field="categoryUi" label="Category" enabled="false" fieldType="OUTLINED"/>
+		</mdf:child>
+
+		<mdf:child bindName="descriptionUi">
+			<m:MaterialTextArea ui:field="descriptionUi" label="Description" enabled="false" fieldType="OUTLINED"/>
+		</mdf:child>
+		
+			<mdf:child bindName="activeFrom">
+			<m:MaterialDatePicker ui:field="activeFromUi" enabled='false' 
+				placeholder="Actif du" detectOrientation="true" language="FR" fieldType="OUTLINED" />
+		</mdf:child>
+		
+			<mdf:child bindName="activeTo">
+			<m:MaterialDatePicker ui:field="activeToUi" enabled='false' 
+				placeholder="Actif au" detectOrientation="true" language="FR" fieldType="OUTLINED" />
+		</mdf:child>
+	
+		<mdf:child bindName="choiceNr">
+			<ma:combobox.MaterialComboBox ui:field="choiceNrUi" label="Nombre de Choix" enabled="false" fieldType="OUTLINED"/>
+		</mdf:child>
+		
+		<mdf:child bindName="choice1">
+			<m:MaterialTextBox ui:field="choice1Ui" label="Choix 1" enabled="false" fieldType="OUTLINED"/>
+		</mdf:child>
+		
+		<mdf:child bindName="choice2">
+			<m:MaterialTextBox ui:field="choice2Ui" label="Choix 2" enabled="false" fieldType="OUTLINED"/>
+		</mdf:child>
+		
+		<mdf:child bindName="choice3">
+			<m:MaterialTextBox ui:field="choice3Ui" label="Choix 3" enabled="false" visible="false" fieldType="OUTLINED"/>
+		</mdf:child>
+		
+		<mdf:child bindName="choice4">
+			<m:MaterialTextBox ui:field="choice4Ui" label="Choix 4" enabled="false" visible="false" fieldType="OUTLINED"/>
+		</mdf:child>
+		
+		<mdf:child bindName="choice5">
+			<m:MaterialTextBox ui:field="choice5Ui" label="Choix 5" enabled="false" visible="false" fieldType="OUTLINED"/>
+		</mdf:child>
+
+		<mdf:child bindName="active">
+			<m:MaterialCheckBox ui:field="actifUi" value="false" type="FILLED" text="Actif" enabled="false" />
+		</mdf:child>
+
+		<mdf:child bindName="intern">
+			<m:MaterialCheckBox ui:field="internUi" value="false" type="FILLED" enabled="false"  text="Intern"/>
+		</mdf:child>
+
+	</mdf:MDFormPanel>
+</m:MaterialPanel>
+</ui:UiBinder> 

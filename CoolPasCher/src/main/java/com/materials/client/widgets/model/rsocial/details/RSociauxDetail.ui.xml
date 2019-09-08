@@ -1,0 +1,69 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:fu='urn:import:com.materials.client.widgets.upload' xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:mdf='urn:import:com.materials.client.widgets.form'
+	xmlns:ma='urn:import:gwt.material.design.addins.client'>
+	<ui:style>
+	.card{
+	
+	border: 1px solid #696969;
+	padding: 10px;
+}
+		
+	</ui:style>
+	<mdf:MDFormPanel ui:field="mdFormUi">
+
+		<mdf:childheader1>
+				<m:MaterialIcon ui:field="backButtonUi" waves="LIGHT" marginLeft="-20"
+				iconType="KEYBOARD_BACKSPACE" iconPosition="LEFT" iconFontSize="40" />
+		</mdf:childheader1>
+
+		<mdf:childheader2>
+			<m:MaterialLabel ui:field="textHeaderLabelUi" text="Details" />
+		</mdf:childheader2>
+		
+					<mdf:childtop>
+		<m:MaterialRow >
+	
+		<m:MaterialColumn >
+			<m:MaterialCard>
+			
+					<m:MaterialCardImage waves="LIGHT">
+			<m:MaterialImage ui:field="itemImageUi" url=""/>
+			</m:MaterialCardImage>
+			</m:MaterialCard>
+			</m:MaterialColumn>
+				</m:MaterialRow>
+	
+		</mdf:childtop>
+
+		<mdf:child bindName="">
+			<m:MaterialTextBox ui:field="nameUi" label="Nom" enabled="false"/>
+		</mdf:child>
+
+		<mdf:child bindName="tooltip">
+			<m:MaterialTextBox ui:field="tooltipUi" label="Tooltip" enabled="false"/>
+		</mdf:child>
+		
+<!-- 		<mdf:child bindName="htmlImg">
+			<m:MaterialTextBox ui:field="htmlImgUi" label="HtmlImg" enabled="false"/>
+		</mdf:child> -->
+		
+		<mdf:child bindName="targetUrl">
+			<m:MaterialTextBox ui:field="targetUrlUi" label="TargetUrl" enabled="false"/>
+		</mdf:child>
+
+
+		<mdf:child bindName="active">
+			<m:MaterialCheckBox ui:field="activeUi" value="false"
+				type="FILLED" text="Actif" enabled="false"/>
+		</mdf:child>
+		
+		<mdf:child bindName="lock">
+			<m:MaterialCheckBox ui:field="lockUi" visible="false"
+				value="false" type="FILLED" enabled="false"/>
+		</mdf:child>
+
+	</mdf:MDFormPanel>
+
+</ui:UiBinder> 

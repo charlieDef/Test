@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module rename-to='coolpascher'>
+	<!-- Inherit the core Web Toolkit stuff. -->
+	<inherits name='com.google.gwt.user.User' />
+     
+	<!-- GWT Material -->
+		<inherits name="gwt.material.design.incubator.AddinsIncubator"/>
+	<inherits name="gwt.material.design.GwtMaterialWithJQueryDebug" />
+	<inherits name="gwt.material.design.addins.GwtMaterialAddins" />
+	<inherits name="com.googlecode.gwt.charts.Charts" />
+	<inherits name="gwt.material.design.GwtMaterialDesignBasic" />
+<inherits name="gwt.material.design.themes.ThemeOrange"/>
+
+
+
+			<!-- GWT Activities and Places -->
+	<inherits name="com.google.gwt.activity.Activity" />
+	
+				<!-- GWT Dispatch-->
+	<inherits name='net.customware.gwt.dispatch.Dispatch' />
+
+	<replace-with class="com.materials.client.context.AppClientFactoryImpl">
+		<when-type-is class="com.materials.client.context.AppClientFactory" />
+	</replace-with>
+	
+	
+	<entry-point class='com.materials.client.CoolPasCherUI' />
+	
+
+	<!-- Specify the paths for translatable code -->
+	<source path='client' />
+	<source path='shared' />
+	<source path='server' />
+
+	<!-- allow Super Dev Mode -->
+	<add-linker name="xsiframe" />
+	 <set-configuration-property name="manifest" value="manifest.json" />
+	 <set-configuration-property name="serviceWorker" value="service-worker.js" />
+	 <set-configuration-property name="CssResource.enableGss" value="true"/>
+	
+
+</module>

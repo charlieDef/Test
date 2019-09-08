@@ -1,0 +1,89 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:m="urn:import:gwt.material.design.client.ui" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:ma='urn:import:gwt.material.design.addins.client'>
+	<ui:style>
+	.content{
+		font-family: times new roman, times, serif;
+		height: auto;
+
+	}
+
+	.radio{
+		color: #ff9800;
+	}
+
+	.radioColumn{
+		border-bottom:1px dotted #ccc; 
+		padding-bottom: 10px;
+		color: #ff9800;
+	}
+	
+		.boxPanel2 {
+
+		font-family: times new roman, times, serif !important;
+	}
+
+	</ui:style>
+
+	<m:MaterialCard styleName="{style.content}" ui:field="cardUi" marginLeft="10" marginRight="10" padding="10" marginBottom="40">
+	
+	<!-- Radios -->
+	<m:MaterialRow styleName="{style.radioColumn}">
+		<m:MaterialColumn grid='s12 m6 l6'>
+		<m:MaterialRadioButton ui:field="rechercheCheckUi"  name="rubrique" text="Rechercher une annonce" checked="true"  type="GAP" styleName="{style.radio}"/>
+		</m:MaterialColumn>
+	
+		<m:MaterialColumn grid='s12 m6 l5' styleName="{style.radio}">
+ 		<m:MaterialRadioButton  ui:field="creationCheckUi" name="rubrique" text="Creer une annonce" type="GAP"/>
+		</m:MaterialColumn>
+	</m:MaterialRow>
+	
+		<!-- SelectBox -->
+	<m:MaterialRow >
+	
+			<m:MaterialColumn grid='s12 m6 l4'>
+			<m:MaterialTextBox ui:field="motCleUi" label="Mot-Clé"  fieldType="OUTLINED"/>	
+		</m:MaterialColumn>
+	
+<!-- 		<m:MaterialColumn grid='s12 m6 l3'>
+			<ma:combobox.MaterialComboBox ui:field="categorieUi" label="Categories" styleName="{style.boxPanel2}" fieldType="OUTLINED"/>
+		</m:MaterialColumn> -->
+	
+	
+		
+		<m:MaterialColumn grid='s12 m6 l4'>
+		<ma:combobox.MaterialComboBox ui:field="provinceUi"   label="Region" styleName="{style.boxPanel2}" fieldType="OUTLINED"/>
+		</m:MaterialColumn>
+		
+				<m:MaterialColumn grid='s12 m6 l4'>
+		<ma:combobox.MaterialComboBox ui:field="villeUi" label="Ville" styleName="{style.boxPanel2}" fieldType="OUTLINED"/>
+		</m:MaterialColumn>
+	
+		<m:MaterialColumn grid='s12 m6 l4'>
+			<m:MaterialTextBox ui:field="autresVilleUi" label="Ville / localité"  visible="false" fieldType="OUTLINED"/>	
+		</m:MaterialColumn>
+	</m:MaterialRow>
+	
+		<m:MaterialRow marginTop="-20">
+		
+
+		
+			<m:MaterialColumn grid='s12 m6 l4'>
+<!-- 			<ma:combobox.MaterialComboBox ui:field="villeUsi" label="Ville" styleName="{style.boxPanel2}"/>
+			<m:MaterialTextBox ui:field="autresVillseUi" label="Ville / localité" visible="false" />	 -->
+		</m:MaterialColumn>
+		
+	</m:MaterialRow>
+	
+	
+	<!-- Button -->
+	<m:MaterialCardAction ui:field="cardActionUi" height="55px" >
+
+	</m:MaterialCardAction>
+
+
+	
+	</m:MaterialCard>
+
+</ui:UiBinder> 

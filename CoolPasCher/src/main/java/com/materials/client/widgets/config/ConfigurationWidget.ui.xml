@@ -1,0 +1,38 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+	
+.config{
+	backgroundColor: #960018 !important;
+		color:  #ffb74d !important;
+}
+	
+	
+	</ui:style>
+
+	<m:MaterialFAB type="CLICK_ONLY"  style="{style.config}">
+		<m:MaterialButton ui:field="configButtonUi" type="FLOATING" iconType="SETTINGS"
+			size="LARGE" style="{style.config}" title="Configurations générales"/>
+		<m:MaterialFABList>
+<!-- 		<m:MaterialAnchorButton ui:field="statisticUi" type="FLOATING" waves="LIGHT"
+				backgroundColor="ORANGE_DARKEN_2" iconType="EQUALIZER" tooltip="Statistics" href="javascript:doToast('statistic')"/> -->
+		
+			<m:MaterialAnchorButton ui:field="rsociauxUi" type="FLOATING" waves="LIGHT"
+				backgroundColor="PURPLE_ACCENT_2" iconType="STAR_HALF" tooltip="Reseaux sociaux" href="javascript:doToast('rsociaux')"/>
+			<m:MaterialAnchorButton ui:field="menuUi" type="FLOATING" waves="LIGHT"
+				backgroundColor="YELLOW" iconType="LIST" tooltip="Menus" href="javascript:doToast('menus')"/>
+<!-- 							<m:MaterialAnchorButton ui:field="fichierUi" type="FLOATING" waves="LIGHT"
+				backgroundColor="DEEP_PURPLE" iconType="ATTACHMENT" tooltip="Fichiers" href="javascript:doToast('attachments')"/> -->
+			<m:MaterialAnchorButton ui:field="slidersUi"  type="FLOATING" waves="LIGHT" href="javascript:doToast('sliders')"
+				iconType="PICTURE_IN_PICTURE" tooltip="Sliders" backgroundColor="BLUE" />
+			<m:MaterialAnchorButton ui:field="usersUi" type="FLOATING" waves="LIGHT"
+				backgroundColor="RED" iconType="PEOPLE" tooltip="Users" href="javascript:doToast('users')"/>
+			<m:MaterialAnchorButton ui:field="contentUi" type="FLOATING" waves="LIGHT"
+				iconType="DESCRIPTION" tooltip="Contenus" backgroundColor="GREEN" href="javascript:doToast('contents')"/>
+						<m:MaterialAnchorButton ui:field="siteUi" type="FLOATING" waves="LIGHT"
+				iconType="ACCOUNT_BALANCE" tooltip="WebSite" backgroundColor="TEAL_DARKEN_3" href="javascript:doToast('website')"/>
+		</m:MaterialFABList>
+	</m:MaterialFAB>
+
+</ui:UiBinder> 

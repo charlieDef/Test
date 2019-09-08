@@ -1,0 +1,76 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:mb="urn:import:com.materials.client.widgets.button"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+	.contact {
+		min-height: 750px;
+		font-family: times new roman, times, serif;
+		margin-left: 10px;
+		margin-right: 10px;
+	
+	}
+		.myBorder {
+		
+	}
+	
+	
+	.myContent{
+		padding: 10px !important;
+}
+		
+	.titel {
+		font-weight: bold;
+		font-size: 18px;
+	}
+	
+	
+		.image {
+		margin-top: -80px;
+border: 2px solid white;
+	}
+	
+	.contactImage {
+		border-bottom: 5px solid #ffb140;
+	}
+			.topArea{
+		background: none repeat scroll 0 0 #8b0000 !important;
+		border-bottom: 2px solid #ffb74d !important;
+		color: #ffb74d !important;
+}
+	
+	</ui:style>
+	
+	<m:MaterialRow>
+	
+		<m:MaterialColumn grid="s12 m12 l8">
+		
+	<m:MaterialCard ui:field="materialCardUI" styleName="{style.contact}">
+				<m:MaterialIcon ui:field="backButtonUi" waves="LIGHT" marginLeft="15" marginTop="15"
+				iconType="KEYBOARD_BACKSPACE" iconPosition="LEFT" iconFontSize="40"  iconColor="AMBER_DARKEN_3"/>
+		<m:MaterialCardContent   textAlign="CENTER" styleName="{style.myContent}">
+		
+					<m:MaterialRow height="100px" margin="0"
+					styleName="{style.topArea}">
+					<m:MaterialCardTitle ui:field="cardTitelUi"
+						fontSize="1.8em" text="Actuel Resultat"  textColor="AMBER_DARKEN_3" />
+				</m:MaterialRow>
+		
+				<!-- Details -->
+		<m:MaterialRow ui:field="detailContentUi" marginBottom="40" textAlign="LEFT" 	styleName="{style.myBorder}">
+		
+		
+
+		</m:MaterialRow>
+
+		</m:MaterialCardContent>
+
+	</m:MaterialCard>
+	
+	</m:MaterialColumn>
+	
+	
+	
+
+	
+	</m:MaterialRow>
+</ui:UiBinder> 

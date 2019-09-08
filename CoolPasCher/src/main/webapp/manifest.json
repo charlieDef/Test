@@ -1,0 +1,18 @@
+{
+	"short_name": "MboaOnline",
+	"name": "Proposer vos Annonces online",
+	"icons": [
+		{
+			"src": "img/pbal_144x144.png",
+			"type": "image/png",
+			"sizes": "144x144"
+		},
+		{
+			"src": "img/pbal_512x367.png",
+			"type": "image/png",
+			"sizes": "512x367"
+		}
+	],
+	"start_url":  "Index.html?launcher=true",
+	"display": "fullscreen"
+}

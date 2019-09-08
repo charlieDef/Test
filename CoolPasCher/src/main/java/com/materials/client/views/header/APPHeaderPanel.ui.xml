@@ -1,0 +1,162 @@
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"  xmlns:incubator="urn:import:gwt.material.design.incubator.client.search"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:ma="urn:import:gwt.material.design.addins.client" xmlns:am="urn:import:com.materials.client.views.header"
+	xmlns:mb="urn:import:com.materials.client.widgets.button">
+
+	<ui:with field='res' type='com.materials.client.resources.AppResource' />
+
+	<ui:style type="com.materials.client.views.header.APPHeaderPanel.Style">
+	.figcaption {
+		border-bottom: 1px solid #ffb74d;
+		z-index: 20;
+		background-color: #960018;
+
+	}
+	 
+	nav a {
+		color: #ffb74d;
+	}
+	
+
+.myButton{
+	background-color: #760017 !important;
+	color: #ffb74d !important;
+	font-size: 12px !important;
+	border: 1px solid #ffb74d !important;
+	margin-top: 15px !important;
+}
+
+.myButton:hover{
+	background-color: #960017 !important;
+}
+
+	nav {
+	height: 64px !important;
+	}
+	
+	.def{
+
+		width: 100%;
+	position: fixed;
+
+}
+
+.deffo{
+	height: 100px!important;
+	width: 100px!important;
+}
+	
+	.mLabel {
+
+		height:10px;
+		margin-left: 10px;
+		font-family: times new roman, times, serif;
+		font-size: 16px;
+		color: #ffb74d;
+		font-weight: bold;
+
+	}
+	
+	.mLabel:hover {
+		cursor: pointer;
+	}
+	
+	.stat{
+			font-family: times new roman, times, serif !important;
+	color: #ffb74d;
+	display: block;
+	outline: 0;
+	text-decoration: none;
+	height: 26px;
+
+	}
+	
+	.isearch{
+		background-image: url("bgBase3.png") !important;
+
+}
+	
+	.stat:hover{
+		color: #a98;
+		background: transparent;
+	}
+	
+	.logoImage{
+	width: 75px;
+
+	  margin-left: 50px;
+	  cursor: pointer;
+}
+	
+	.dropDown {
+		margin-top: 30px;
+		  
+	}
+	
+	.search {
+		width: 500px;
+		color: black !important;
+		font-family: times new roman, times, serif;
+		border: none;
+	}
+	
+	.searchIcon {
+		cursor: pointer;
+		color: #ffb74d;
+<!-- 		margin-right: 10px;
+		margin-top: 13px; -->
+	}
+	</ui:style>
+
+
+	<m:MaterialHeader ui:field="header"  opacity="1"   styleName="{style.def}">
+
+		<m:MaterialNavBar ui:field="navBar" 
+		 activates="sidenavNavShrink" shadow="2"
+			styleName="{style.figcaption}" >
+
+
+			<m:MaterialNavBrand ui:field="materialNavBrandUi"  style="color: #483F36">
+		
+			<m:MaterialRow marginTop="-5" marginBottom="10">
+				<m:MaterialLabel ui:field="logoLabelUi" opacity="1" text="MBOA-ONLINE.COM" class="{style.mLabel}" />
+			</m:MaterialRow>
+				<m:MaterialRow>
+					<m:MaterialImage ui:field="logoImageUi" class="{style.logoImage}"/>
+							
+				</m:MaterialRow>
+				
+						
+			</m:MaterialNavBrand>
+		
+		
+		<m:MaterialNavSection float="RIGHT" ui:field="navSectionUi">	
+		
+		<m:MaterialRow>
+		
+	
+<!-- 	
+					<m:MaterialColumn >
+							<incubator:ExpandableInlineSearch   width="20%" placeholder="Que cherchez vous ?" ui:field="expandableInline" marginRight="300"/>
+					</m:MaterialColumn> -->
+					
+<!-- 							<m:MaterialColumn marginRight="10" >
+		<mb:MboaButton ui:field="buttonCreation" text="Créer une annonce" styleName="{style.myButton}"/>
+			</m:MaterialColumn>		 -->
+					
+					</m:MaterialRow>
+		
+		<m:MaterialPanel ui:field="menu2Ui" marginLeft="15"  />
+				
+				<g:HTMLPanel ui:field="menuUi" styleName="{style.dropDown}"  />
+				<!-- <m:MaterialIcon ui:field="searchIconUi" iconType="SEARCH"styleName="{style.searchIcon}" width="50px" visible="false"/> -->
+			</m:MaterialNavSection>
+  
+<!-- 			<m:MaterialSearch ui:field="txtSearch" styleName="{style.search}" 
+				hideOn="HIDE_ON_MED_DOWN" float="RIGHT" placeholder="Rechercher"
+				active="true" visible="false" /> -->
+				
+		</m:MaterialNavBar>
+
+	</m:MaterialHeader>
+</ui:UiBinder> 

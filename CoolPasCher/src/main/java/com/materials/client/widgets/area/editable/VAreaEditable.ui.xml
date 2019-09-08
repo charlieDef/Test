@@ -1,0 +1,92 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:ie="urn:import:com.materials.client.widgets.area.editable.image"
+	xmlns:te="urn:import:com.materials.client.widgets.area.editable.text" 	
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+	.titel {
+		padding-left: 5px;
+	
+	}
+	
+	.titel p {
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+		
+	}
+	
+	.image {
+		padding: 5px;
+		background: white;
+		margin-top: -5px;
+		margin-left: -10px !important;
+	}
+	
+	.area {
+		font-size: 16px;
+		margin-bottom: -5px;
+		font-family: times new roman, times, serif;
+			position: relative;
+				padding: 7px;
+	}
+	
+	.area ol{
+		margin-left: 40px;
+	}
+	
+	.textContent {
+		
+	}
+	
+	.textContent p {
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+	}
+	
+	.textContent:hover {
+		background-color: #eee;
+	}
+	
+		.iconDelete {
+		position: absolute;
+		top:-5px;
+		right: 0;
+	}
+			.iconSave {
+		position: absolute;
+		top:-5px;
+		right: 30px;
+	}
+
+	
+	</ui:style>
+
+	<m:MaterialPanel styleName="{style.area}">
+	
+	<m:MaterialRow>
+			<m:MaterialIcon ui:field="backButtonUi" waves="LIGHT" 
+				iconType="KEYBOARD_BACKSPACE" iconPosition="LEFT" iconFontSize="40" />
+		<m:MaterialIcon ui:field="saveButtonUi" waves="LIGHT" iconType="SAVE" title="Sauver" margin="10" iconPosition="RIGHT" enabled="false" iconSize="SMALL"/>	
+	</m:MaterialRow>
+	<m:MaterialRow marginBottom="10" >
+		<te:TextEditable ui:field="textTitelUi" styleName="{style.titel}" editorHeight="80px" editorTitel="Editer le Titre" />
+	</m:MaterialRow>
+	<m:MaterialRow ui:field="rowParentUi">
+	
+		<m:MaterialColumn ui:field="columnImageUi" grid="s12 l5" >
+			<ie:ImageEditable ui:field="imageUi" imageUrl="img/african.jpg"  styleName="{style.image}"/>
+		</m:MaterialColumn>
+		<te:TextEditable  ui:field="textContentUi" editorHeight="300px" editorTitel="Editer le Contenu" />
+	</m:MaterialRow>
+	
+		<m:MaterialRow >
+	
+		<m:MaterialIntegerBox ui:field="indexUi" />
+	
+	</m:MaterialRow>
+	
+	</m:MaterialPanel>
+
+	
+	
+
+</ui:UiBinder> 

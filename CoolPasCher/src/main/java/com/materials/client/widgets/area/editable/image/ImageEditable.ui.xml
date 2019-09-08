@@ -1,0 +1,40 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:ma="urn:import:gwt.material.design.addins.client.fileuploader"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+	.image {
+		border: 1px solid rgb(204, 204, 204);
+		padding: 5px;
+		background: white;
+	}
+	
+	.icon {
+		position: absolute;
+		top: -30px;
+		left: 5;
+	}
+	
+	.therow {
+		position: relative;
+		margin: 0px;
+	}
+	
+	.fileuploader {
+		height: 5px !important;
+	}
+	</ui:style>
+	<m:MaterialRow ui:field="materialRowUi">
+		<m:MaterialImage ui:field="imageUi" styleName="{style.image}" />
+
+		<ma:MaterialFileUploader ui:field="uploaderUi"
+			preview="false" styleName="{style.fileuploader}" url="/UploadServlet"
+			shadow="0">
+			<g:FlowPanel styleName="{style.therow}">
+				<m:MaterialIcon ui:field="editButtonUi" title="Modifier l'image"
+					iconType="CLOUD_UPLOAD" styleName="{style.icon}" />
+			</g:FlowPanel>
+
+		</ma:MaterialFileUploader>
+	</m:MaterialRow>
+</ui:UiBinder> 

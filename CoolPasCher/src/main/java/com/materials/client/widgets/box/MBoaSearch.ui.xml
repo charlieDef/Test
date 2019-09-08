@@ -1,0 +1,57 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:ma='urn:import:gwt.material.design.addins.client'
+	 xmlns:mdf='urn:import:com.materials.client.widgets.box'>
+	<ui:style>
+	.boxPanel {
+	font-family: times new roman, times, serif !important;
+		padding: 0px 0px 0px 0px;
+	}
+	
+	.boxPanel2 {
+		margin-bottom: 35px !important;
+		font-family: times new roman, times, serif !important;
+	}
+	
+	.buttonSearch {
+		background-color: #960018;
+	}
+	
+	.titelLabel{
+	text-align: center;
+	font-weight: bolder;
+	margin-bottom: 25px;
+	color: #aaa;
+		border-bottom: 1px dotted #aaa;
+}
+	
+	</ui:style>	
+	
+	
+	<m:MaterialRow>
+	
+	<m:MaterialLabel text="Créer une annonce" styleName="{style.titelLabel}"/>
+
+	<g:HTMLPanel ui:field="htmlPanelUi"  styleName="{style.boxPanel}">
+			
+			
+		<m:MaterialRadioButton name="rubrique" text="Vente" checked="true"/>
+ 		<m:MaterialRadioButton name="rubrique" text="Location" />
+
+			<ma:combobox.MaterialComboBox ui:field="type2BienUi" label="Type de bien" styleName="{style.boxPanel2}"/>
+			
+			<ma:combobox.MaterialComboBox ui:field="provinceUi" label="Region" styleName="{style.boxPanel2}"/>
+			
+			<ma:combobox.MaterialComboBox ui:field="villeUi" label="Ville" styleName="{style.boxPanel2}"/>
+			
+			<m:MaterialTextBox ui:field="autresVilleUi" label="Ville / localité" styleName="{style.boxPanel2}" visible="false"/>
+				
+			<m:MaterialButton ui:field="configButtonUi" waves="LIGHT" text="Configurer" style="background-color: #960018; color:#ffb74d;" marginBottom="20"  />
+
+			
+
+	</g:HTMLPanel>
+	
+	</m:MaterialRow>
+
+</ui:UiBinder> 

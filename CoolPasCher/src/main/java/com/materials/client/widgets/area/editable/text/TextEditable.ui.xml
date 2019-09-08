@@ -1,0 +1,40 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+	.icon {
+		position: absolute;
+		top:-30px;
+		right: 35px;
+	}
+		.iconDelete {
+		position: absolute;
+		top:-30px;
+		right: 0;
+	}
+	.therow {
+		position: relative;
+		margin: 0px;
+	}
+	
+			.areaText{
+
+	}
+	
+		.areaText ul li{
+		list-style-type: square !important;
+		margin-left: 40px;
+
+	}
+	
+	
+	</ui:style>
+	<m:MaterialRow ui:field="materialRowUi">
+		<g:HTML ui:field="htmlUi" text="Votre Titre ici" styleName="{style.areaText}"/>	
+	
+	<g:FlowPanel styleName="{style.therow}">
+		<m:MaterialIcon ui:field="editButtonUi" title="editer" iconType="CREATE" visible="false" width="60px" styleName="{style.icon}"/>
+	</g:FlowPanel>
+	
+	</m:MaterialRow>
+</ui:UiBinder> 

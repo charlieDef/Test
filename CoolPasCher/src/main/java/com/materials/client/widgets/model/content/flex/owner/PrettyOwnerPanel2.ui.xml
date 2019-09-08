@@ -1,0 +1,92 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:fu='urn:import:com.materials.client.widgets.upload' xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:mdf='urn:import:com.materials.client.widgets.form'
+	xmlns:ma='urn:import:gwt.material.design.addins.client'  xmlns:ie="urn:import:com.materials.client.widgets.upload.image">
+	<ui:style>
+	
+	.container{	
+		margin-top: 0px;
+	overflow: hidden;
+	}
+	
+	.panel{
+		border: 1px solid #e0e0e0;
+		border-top: none;
+	}
+	
+	.auteur{
+		background-color: #eee;
+		margin-bottom: -9px;
+		font-weight: bold;
+		padding-left: 15px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+
+	.mySlide{
+	 	height: 0;
+	}
+
+.labelBig{
+	font-weight: bold;
+}
+
+.myContact{
+	text-align: left;
+}
+
+.dd{
+	border: 1px solid #ccc;
+}
+
+.firstRow{
+	border-bottom: 1px solid #ddd;
+}
+
+	</ui:style>
+	<m:MaterialCard styleName="{style.container}" ui:field="cardUi">
+	<m:MaterialLabel ui:field="annonceurUi" text="Annonceur" styleName="{style.auteur}"/> 
+			
+		<m:MaterialRow paddingTop="15" styleName="{style.firstRow}">
+			
+			<m:MaterialColumn>
+			<m:MaterialImage ui:field="imageUi" styleName="{style.dd}" url="http://materializecss.com/images/yuna.jpg"  type="CIRCLE" width="65px"  height="65px"/>
+			</m:MaterialColumn>
+			
+			<m:MaterialColumn>
+					
+			<m:MaterialLabel ui:field="labelBigUi" text="Tameze Anne Marie" styleName="{style.labelBig}"/>
+			<m:MaterialLabel ui:field="labelSmallUi" text="Texte de Profil" styleName=""/>
+			</m:MaterialColumn>
+			
+			</m:MaterialRow>
+			
+	
+			<!--<m:MaterialLabel text="I'll be in your neighborhood doing errands"/> -->
+ 						 			
+ 			<m:MaterialPanel ui:field="pathAnimatorUi">
+ 			
+ 			
+ 			<m:MaterialRow styleName="{style.myContact}" >
+ 			 <m:MaterialButton ui:field="btnMailSource" text="mail" iconType="MAIL_OUTLINE" iconPosition="LEFT" marginLeft="15"  />
+ 			</m:MaterialRow>
+ 			
+ 			
+ 			<m:MaterialRow ui:field="contactRowUi"  styleName="{style.mySlide}">
+ 		
+ 			</m:MaterialRow>
+ 			
+
+   
+     
+           
+
+			</m:MaterialPanel>
+		
+		
+			
+	
+	</m:MaterialCard>
+	
+</ui:UiBinder> 

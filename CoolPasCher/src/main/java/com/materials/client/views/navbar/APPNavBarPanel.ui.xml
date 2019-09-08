@@ -1,0 +1,135 @@
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:q="urn:import:com.materials.client.widgets.boxSearch"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:ma="urn:import:gwt.material.design.addins.client" xmlns:b="urn:import:com.materials.client.widgets.box">
+
+	<ui:with field='res' type='com.materials.client.resources.AppResource' />
+
+	<ui:style type="com.materials.client.views.navbar.APPNavBarPanel.Style">
+	.tree {
+		/* overflow: auto; */
+		width: 100%;
+	}
+	
+	.mLabelHeader {
+		padding-top: 0px;
+		font-family: times new roman, times, serif;
+		font-size: 17px;
+		color: #ffb74d;
+	}
+	
+	.mLabelHeader2 {
+		font-family: times new roman, times, serif;
+		font-size: 13px;
+	}
+	
+	.materialImageNav {
+		padding: 50px;
+		margin-top: -25px;
+
+	}
+	
+	.materialSideNavDrawer {
+		border-right: 1px solid #483F36;
+		border-bottom: 1px solid #483F36;
+	}
+	
+	.mSideNavHeader {
+		text-align: left !important;
+		color: #483F36 !important;
+		height: 65px !important;
+		border-bottom: 3px solid #483F36 !important;
+		background-color: #960018;
+		padding-top: 10px;
+	}
+	
+	.mCollapsItemHeader {
+		color: #ff9800 !important;
+		font-size: 16px;
+		height: 45px !important;
+		border-bottom: 1px solid #ddd !important;
+	}
+	
+	.mCollapsItemBody {
+		background-color: #FDF5E6 !important;
+		font-size: 16px;
+	}
+	
+	.mSideNav {
+		border-bottom: 1px solid #ccc !important;
+	}
+	
+	.mCollapsItemBodyItem {
+		border-bottom: 1px dotted #ddd !important;
+		height: 40px !important;
+		padding-left: 0px !important;
+	}
+	
+	.myHeader {
+		text-align: center;
+	}
+	
+	.morph {
+		text-align: center;
+		margin-left: -10px;
+	}
+	
+	.theLabel {
+		font-size: 18px;
+		color: #ff9800;
+		margin-left: -15px;
+
+	}
+	
+	.theLabelArea {
+		background-color: #eee;
+		cursor: pointer;
+		border-bottom: 1px solid #ccc !important;
+	}
+	
+	.collapsArea {
+		margin: 0px 0px 0px 0px;
+	}
+	
+	.mSideNavPush {
+		font-family: times new roman, times, serif;
+				border-bottom: 1px solid #ffb74d;
+				border-right: 1px solid #ffb74d;
+				 min-height: 500px !important;
+				 border-bottom-right-radius: 10px;
+	}
+	
+		.cardArea2 {
+	border-bottom: 5px solid #ffb74d !important;
+<!-- 	border-right: 2px solid #960018 !important; -->
+	}
+	
+	.cardArea {
+		text-align: left;
+		bottom: 1px;
+	}
+	</ui:style>
+
+	<m:MaterialSideNavPush m:id="sidenavNavShrink"
+		class="{style.mSideNavPush}" ui:field="sideNav" withHeader="true" >
+
+		<m:MaterialNavBrand ui:field="materialNavBrandUi"
+			class="{style.mSideNavHeader} {style.mSideNav} {style.cardArea2}">
+		
+			
+			<m:MaterialIcon ui:field="homeIconUi" iconType="HOME"  iconColor="AMBER_DARKEN_2" marginTop="10"/>
+			<!--<m:MaterialIcon ui:field="searchIconUi" visible="true" iconType="MORE_VERT"  iconColor="AMBER_DARKEN_2" marginTop="10" float="RIGHT"/> -->
+					
+		</m:MaterialNavBrand>
+	
+		<m:MaterialNavContent backgroundColor="WHITE">  
+			 
+			 <q:BoxSearch ui:field="boxSearchUi" toolTipp="Lancer la recherche" theLabel="" />	
+			 
+			<m:MaterialPanel ui:field="materialPanelMorphUi" />
+			<m:MaterialCollapsible ui:field="collapsibleUi"
+			 styleName="{style.collapsArea}" />
+		</m:MaterialNavContent>
+		
+
+	</m:MaterialSideNavPush>
+</ui:UiBinder> 

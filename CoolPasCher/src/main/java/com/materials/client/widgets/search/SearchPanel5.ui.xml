@@ -1,0 +1,165 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:m="urn:import:gwt.material.design.client.ui" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:ma='urn:import:gwt.material.design.addins.client' xmlns:b='urn:import:com.materials.client.widgets.boxSearch'>
+	<ui:style type="com.materials.client.widgets.search.SearchPanel5.SearchStyle">
+	.content{
+		font-family: times new roman, times, serif;
+		height: auto;	
+		margin-bottom: 20px!important;
+	}
+	
+		.content2{
+
+			height: 150px;
+	}
+
+	.radio{
+		color: #ff9800;
+		font-size: 17px;
+		font-weight: bold;
+		margin-left: -11px;
+	}
+
+	.radioColumn{
+
+		padding-bottom: 5px;
+		color: #ff9800;
+		margin-bottom: 5px;
+	}
+	
+	.boxPanel2 {
+		font-family: times new roman, times, serif !important;
+	}
+	
+	 .theLink{
+	color: rgb(255, 152, 0);
+	
+}
+
+.theLink:hover {
+	text-decoration:  underline !important;
+}
+	
+	</ui:style>
+
+	
+
+		<!-- SelectBox -->
+	<m:MaterialRow marginBottom="5">
+
+			<m:MaterialCard styleName="{style.content}" ui:field="cardUi" marginLeft="10" marginRight="10" opacity="0" padding="10" marginBottom="0">
+	
+	
+					<m:MaterialRow ui:field="baseRowUi">
+						<m:MaterialRow >
+							<m:MaterialColumn grid='s12 m12 l5' ui:field="sBoxUi" >
+								<b:BoxSearch ui:field="motCleUi" toolTipp="Lancer la recherche" theLabel="Que cherchez vous ?" />	
+							</m:MaterialColumn>	
+										
+							<m:MaterialColumn grid='s12 m7 l7' paddingTop="13" ui:field="linkUi" >
+							
+	<!-- 												
+								<m:MaterialColumn >
+									<m:MaterialLink text="Electronics" margin="20" styleName="{style.theLink}"/>
+								</m:MaterialColumn>
+									
+								<m:MaterialColumn >
+									<m:MaterialLink text="Immobiliers" margin="20"  styleName="{style.theLink}"/>
+								</m:MaterialColumn>
+									
+								<m:MaterialColumn >
+									<m:MaterialLink text="Services" margin="20"  styleName="{style.theLink}"/>
+								</m:MaterialColumn>
+									
+								<m:MaterialColumn >
+									<m:MaterialLink text="Formations"  margin="20"  styleName="{style.theLink}"/>
+								</m:MaterialColumn>
+									
+								<m:MaterialColumn >
+									<m:MaterialLink text="Automobiles"  margin="20"  styleName="{style.theLink}"/>
+								</m:MaterialColumn>
+									
+									
+								<m:MaterialColumn >
+									<m:MaterialLink text="Autres ..." marginLeft="20"  styleName="{style.theLink}"/>
+								</m:MaterialColumn>
+ -->
+
+							</m:MaterialColumn>	
+						</m:MaterialRow>
+						<m:MaterialRow >
+								<m:MaterialCardAction ui:field="cardActionUi" height="50px"  />
+						</m:MaterialRow>
+								
+						<!-- <m:MaterialColumn grid='s12 m6 l6' padding="10" ui:field="linkUi">
+					
+					<m:MaterialRow >
+						<m:MaterialColumn  grid='s12 m4 l3'>			
+								<m:MaterialPanel margin="10">
+								<m:MaterialLink text="Electronics"/>
+								</m:MaterialPanel>
+								<m:MaterialPanel  margin="10">
+								<m:MaterialLink text="Immobiliers" />
+								</m:MaterialPanel>
+								<m:MaterialPanel  margin="10">
+								<m:MaterialLink text="Services" />
+								</m:MaterialPanel>																														
+						</m:MaterialColumn>		
+						
+						<m:MaterialColumn  grid='s12 m4 l3'>
+							<m:MaterialPanel margin="10">
+								<m:MaterialLink text="Interieurs" />
+							</m:MaterialPanel>
+							<m:MaterialPanel margin="10">
+								<m:MaterialLink text="Evenements" />
+							</m:MaterialPanel>
+							<m:MaterialPanel margin="10">
+								<m:MaterialLink text="Automobiles" />
+							</m:MaterialPanel>				
+						</m:MaterialColumn>	
+		
+						
+									<m:MaterialColumn  grid='s12 m4 l3'>
+										<m:MaterialPanel margin="10">
+											<m:MaterialLink text="Voyages" />
+										</m:MaterialPanel>	
+											
+										<m:MaterialPanel margin="10">
+										<m:MaterialLink text="Modes"/>
+										</m:MaterialPanel>	
+										<m:MaterialPanel margin="10">
+										<m:MaterialLink text="Formations" />
+										</m:MaterialPanel>	
+			
+						</m:MaterialColumn>		
+						
+								<m:MaterialColumn  grid='s12 m4 l3'>
+							<m:MaterialPanel margin="10">
+								<m:MaterialLink text="Cuisine" />
+							</m:MaterialPanel>
+							<m:MaterialPanel margin="10">
+								<m:MaterialLink text="Audio/Hifi" />
+							</m:MaterialPanel>
+							<m:MaterialPanel margin="10">
+								<m:MaterialLink text="Autres..." />
+							</m:MaterialPanel>				
+						</m:MaterialColumn>	
+							
+					</m:MaterialRow>
+
+						</m:MaterialColumn>	 -->
+						
+					</m:MaterialRow>
+				
+			</m:MaterialCard>
+
+	</m:MaterialRow>
+	
+
+
+
+	
+
+
+</ui:UiBinder> 

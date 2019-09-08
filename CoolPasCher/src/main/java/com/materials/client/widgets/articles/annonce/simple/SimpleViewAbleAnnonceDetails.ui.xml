@@ -1,0 +1,153 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:fu='urn:import:com.materials.client.widgets.upload' xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:mdf='urn:import:com.materials.client.widgets.form'
+	xmlns:ma='urn:import:gwt.material.design.addins.client' xmlns:ie="urn:import:com.materials.client.widgets.upload.image" 
+	 xmlns:js="urn:import:com.materials.client.widgets.slider.jssor">
+	 
+	<ui:style>
+	.container {
+		font-family: times new roman, times, serif;
+		text-align: left;
+
+		overflow: auto;
+		margin-left: -10px;
+		margin-right: -10px;
+		margin-top: -15px;
+		min-height: 800px;
+	}
+	
+	.middleArea {
+		margin-bottom: 10px;
+	}
+	
+	.title {
+		color: #ffb140;
+    font-family: times new roman, times, serif;
+    font-size: 22px !important;
+    text-shadow: 1px 1px 1px black;
+	}
+	
+	.columnBottomRight {
+		padding-left: 20px;
+		border-left: 1px solid #eee;
+		overflow: auto;
+	}
+	
+	.columnBottomRight {
+		padding-left: 20px;
+		border-left: 1px solid #eee;
+		overflow: auto;
+	}
+	
+	.materialRowSliderRight {
+		padding-left: 20px;
+		overflow: auto;
+		margin-left: 0px;
+	}
+	
+		.details{
+		border-bottom: 1px dotted #ccc;
+
+		margin-bottom: 0px;
+		font-weight: bold;
+		padding-left: 5px;
+	}
+	.prix{
+	margin-bottom:-15px;
+	font-size: 25px !important;
+	font-weight: bold !important;
+}
+	
+	.formContent{
+		padding: 10px;
+		padding-top: 20px;
+		margin-bottom: -40px;
+	}
+	
+	.prix{
+	font-size: 18px;
+}
+	</ui:style>
+
+
+	<m:MaterialPanel ui:field="materialPanelUi" styleName="{style.container}">
+
+		<!-- Title Area -->
+		<m:MaterialRow ui:field="materialRow1Ui" styleName="" marginBottom="10">
+			<m:MaterialPanel ui:field="columnTop" styleName=""
+				textAlign="LEFT" marginLeft="10">
+				<m:MaterialLabel ui:field="labelUi" styleName="{style.title}" />
+			</m:MaterialPanel>
+		</m:MaterialRow>
+
+		<m:MaterialRow styleName="{style.middleArea}">
+		
+			<!-- Left Area -->
+			<m:MaterialColumn ui:field="materialColumnSliderLeftUi" styleName="" grid="s12 l8">
+
+				<!-- Slider -->
+				<m:MaterialPanel ui:field="sliderUi" />
+				
+				<m:MaterialRow  marginLeft="-10">
+				
+				<m:MaterialColumn>
+				<m:MaterialSwitch ui:field="favoritsUi" marginLeft="-10" title="Ajouter comme favorit"  visible="false"/>
+				</m:MaterialColumn>
+				<m:MaterialColumn>
+						<m:MaterialLabel ui:field="favoritsLabelUi" text="Favorit" marginLeft="-25"  visible="false"/>
+				
+				</m:MaterialColumn>
+				<m:MaterialColumn></m:MaterialColumn>
+				<m:MaterialColumn float="LEFT">
+					<m:MaterialIcon textColor="AMBER_DARKEN_3" iconType="SHARE" marginRight="-12" ui:field="shareUi" title="Partager"  />
+				</m:MaterialColumn>
+			
+				</m:MaterialRow>
+			
+				
+				
+				<!-- Content -->
+				<m:MaterialCard ui:field="contentUi" padding="10" marginBottom="40">
+					<m:MaterialTextBox readOnly="true" label="Prix" ui:field="prixlabelEditor"  marginLeft="1" styleName="{style.prix}" marginTop="20"/>
+<!-- 					<m:MaterialLabel text="Details" styleName="{style.details}" /> -->
+
+			<!-- 		<m:MaterialRow ui:field="formContentUi" styleName="{style.formContent}">
+
+		
+
+						<m:MaterialColumn>						
+							<m:MaterialTextBox readOnly="true" label="Categorie" ui:field="categorieUi" />
+							<m:MaterialTextBox readOnly="true" label="Nombre de vues" ui:field="viewsUi"  iconType="VISIBILITY"  visible="false"/>
+						</m:MaterialColumn>
+					</m:MaterialRow> -->
+
+					<m:MaterialRow  padding="15">
+							<m:MaterialLabel text="Details" styleName="{style.details}" marginLeft="-20" marginBottom="15"/>
+						<g:HTMLPanel ui:field="longDescriptionUi"/>
+					</m:MaterialRow>
+					
+				</m:MaterialCard>
+			</m:MaterialColumn>
+
+			<!-- RIGHT Area -->
+			<m:MaterialColumn ui:field="materialColumnSliderRightUi"
+				styleName="{style.materialRowSliderRight}" grid="s12 l4">
+
+				<!-- Auteur Area -->
+				<m:MaterialPanel ui:field="panelOwnerUi" marginBottom="40" />
+
+				<!-- Commentaires Area -->
+				<m:MaterialPanel ui:field="panelCommentUi" />
+
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+		<m:MaterialRow ui:field="materialRow4Ui" styleName="">
+			<m:MaterialColumn grid="s12 l7" ui:field="columnBottomLeft"  styleName=""></m:MaterialColumn>
+			<m:MaterialColumn grid="s12 l5" ui:field="columnBottomRight" styleName="{style.columnBottomRight}"></m:MaterialColumn>
+		</m:MaterialRow>
+
+	</m:MaterialPanel >
+
+</ui:UiBinder> 
